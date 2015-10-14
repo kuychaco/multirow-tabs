@@ -2,21 +2,15 @@ module.exports =
 class MultirowTabsView
   constructor: (serializedState) ->
     # Create root element
-    @element = document.createElement('div')
+    @element = document.body
     @element.classList.add('multirow-tabs')
-
-    # Create message element
-    message = document.createElement('div')
-    message.textContent = "The MultirowTabs package is Alive! It's ALIVE!"
-    message.classList.add('message')
-    @element.appendChild(message)
 
   # Returns an object that can be retrieved when package is activated
   serialize: ->
 
   # Tear down any state and detach
   destroy: ->
-    @element.remove()
+    @element.classList.remove('multirow-tabs')
 
   getElement: ->
     @element
