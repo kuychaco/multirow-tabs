@@ -1,0 +1,18 @@
+{
+  "name": "multirow-tabs",
+  "main": "./lib/multirow-tabs",
+  "version": "0.0.0",
+  "description": "Display Atom editor tabs in multiple rows for easy navigation and viewing",
+  "keywords": [
+  ],
+  "activationCommands": {
+    "atom-workspace": "multirow-tabs:toggle"
+  },
+  "repository": "https://github.com/atom/multirow-tabs",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+  }
+}

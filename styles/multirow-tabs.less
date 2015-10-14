@@ -1,0 +1,28 @@
+// The ui-variables file is provided by base themes provided by Atom.
+//
+// See https://github.com/atom/atom-dark-ui/blob/master/styles/ui-variables.less
+// for a full listing of what's available.
+@import "ui-variables";
+
+.multirow-tabs {
+  .tab-bar {
+    height: auto;
+    flex-wrap: wrap;
+    .tab,
+    .tab.active {
+      flex: 1 0 auto;
+      height: @tab-height;
+      line-height: @component-line-height;
+    }
+    .tab .title,
+    .tab.active .title {
+      padding-right: 5px;
+      position: relative;
+      top: 1px;
+    }
+    .tab .close-icon,
+    .tab.active .close-icon {
+      line-height: @component-line-height;
+    }
+  }
+}
