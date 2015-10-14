@@ -8,7 +8,7 @@
   "activationCommands": {
     "atom-workspace": "multirow-tabs:toggle"
   },
-  "repository": "https://github.com/atom/multirow-tabs",
+  "repository": "https://github.com/kuychaco/multirow-tabs",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
