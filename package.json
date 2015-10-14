@@ -1,7 +1,7 @@
 {
   "name": "multirow-tabs",
   "main": "./lib/multirow-tabs",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Display Atom editor tabs in multiple rows for easy navigation and viewing",
   "keywords": [],
   "activationCommands": {
