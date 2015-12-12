@@ -6,9 +6,13 @@ module.exports = MultirowTabs =
     # Events subscribed to in atom's system can be easily cleaned up with a CompositeDisposable
     @subscriptions = new CompositeDisposable
 
-    # Register command that toggles this view
+    # Register command that toggles this styling
     @subscriptions.add atom.commands.add 'atom-workspace', 'multirow-tabs:toggle': => @toggle()
 
+  deactivate: ->
+    @subscriptions.dispose()
+
   toggle: ->
-    console.log 'MultirowTabs was toggled!'
-    document.getElementsByClassName('tab-bar')[0].classList.toggle('multirow-tabs');
+    pane = atom.workspace.getActivePane()
+    paneElement = atom.views.getView(pane)
+    paneElement.getElementsByClassName('tab-bar')[0].classList.toggle('multirow-tabs');
